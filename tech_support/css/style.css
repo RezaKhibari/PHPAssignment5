@@ -1,0 +1,102 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333366;
+    border-bottom: 2px solid #333366;
+    padding-bottom: 5px;
+}
+
+nav {
+    padding: 20px;
+    background-color: #eef;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333366;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333366;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Navigation section */
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+nav {
+    flex-basis: 30%;
+}
+
+article {
+    flex-basis: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    nav, article {
+        flex-basis: 100%;
+    }
+}
